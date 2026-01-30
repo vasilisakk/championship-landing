@@ -1,0 +1,83 @@
+.overlay {
+  position: fixed;
+  top: 60px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 10;
+
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+
+/* меню */
+.menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+
+  width: 100%;
+  background: #fff;
+  z-index: 11;
+
+  transform: translateY(-16px);
+  opacity: 0;
+  pointer-events: none;
+
+  transition:
+    transform 0.4s cubic-bezier(0.2, 0.8, 0.2, 1),
+    opacity 0.25s ease;
+
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+}
+
+/* открыто */
+.page.menu-open .menu {
+  transform: translateY(0);
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.page.menu-open .overlay {
+  opacity: 1;
+  pointer-events: auto;
+}
+/* Состояние “открыто” — превращаем в крестик */
+.page.menu-open .header__nav-line:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+
+.page.menu-open .header__nav-line:nth-child(2) {
+  opacity: 0;
+}
+
+.page.menu-open .header__nav-line:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
+
+.menu__list {
+  list-style: none;
+  margin: 0;
+  padding: 16px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.menu__list a {
+  text-decoration: none;
+  color: #000;
+  font-size: 16px;
+}
+
+.menu__list a:focus {
+  color: #0077FF;
+}
+
+.page.menu-open .header__nav {
+  transform: rotate(90deg);
+}
