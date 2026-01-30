@@ -74,7 +74,7 @@
   font-size: 16px;
 }
 
-.menu__list a:focus {
+.menu__list a:active {
   color: #0077FF;
 }
 

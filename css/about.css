@@ -1,0 +1,47 @@
+.about {
+  width: 100%;
+
+  position: relative;
+
+  background-image: url(/css/images/about__picture.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.about__overlay {
+  position: absolute;
+  inset: 0;
+
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.about__title {
+  display: inline-block;
+  position: relative;
+
+  padding: 0 16px;
+
+  font-size: 32px;
+  font-weight: 700px;
+  line-height: 100%;
+
+  color: #fff;
+
+  z-index: 4;
+}
+
+.about__description {
+  display: inline-block;
+  position: relative;
+  line-height: 100%;
+
+  padding: 0 16px;
+
+  color: #fff;
+  z-index: 4;
+}
+
+.about__description_is_bold {
+  font-weight: 700;
+}
