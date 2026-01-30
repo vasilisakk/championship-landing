@@ -7,13 +7,15 @@
   display: flex;
   flex-direction: column;
 
-  padding: 16px 0;
+  position: relative;
   
   gap: 16px;
 }
 
 .hero__badge {
-  align-self: flex-start;
+  position: absolute;
+  top: 0;
+  right: 0;
   background-color: #0077FF;
   color: #fff;
   padding: 12px 6px;
