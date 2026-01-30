@@ -10,6 +10,8 @@
   <link rel="stylesheet" href="/css/hero.css">  
   <link rel="stylesheet" href="/css/about.css">
   <link rel="stylesheet" href="/css/directions.css"> 
+  <link rel="stylesheet" href="/css/prizes.css">
+  <link rel="stylesheet" href="/css/form.css">
 </head>
 <body class="page">
   <header class="header">
@@ -24,24 +26,24 @@
       <div class="menu__handle" aria-hidden="true"></div>
 
       <ul class="menu__list">
-        <li class="menu__item"><a class="menu__link" href="#about">О мероприятии</a></li>
-        <li class="menu__item"><a class="menu__link" href="#">Этапы</a></li>
-        <li class="menu__item"><a class="menu__link" href="#">Направления</a></li>
-        <li class="menu__item"><a class="menu__link" href="#">Призы</a></li>
-        <li class="menu__item"><a class="menu__link" href="#">Новости</a></li>
-        <li class="menu__item"><a class="menu__link" href="#">Контакты</a></li>
+        <li class="menu__item"><a class="menu__link" href="#main">О мероприятии</a></li>
+        <li class="menu__item"><a class="menu__link" href="#stages">Этапы</a></li>
+        <li class="menu__item"><a class="menu__link" href="#directions">Направления</a></li>
+        <li class="menu__item"><a class="menu__link" href="#prizes">Призы</a></li>
+        <li class="menu__item"><a class="menu__link" href="#news">Новости</a></li>
+        <li class="menu__item"><a class="menu__link" href="#contacts">Контакты</a></li>
       </ul>
     </nav>
   </header>
-  <section class="hero">
+  <section class="hero" id="main">
     <div class="hero__content">
       <div class="hero__badge">10-24 апреля</div>
-      <h1 class="hero__header">Чемпионат по <span class="hero__header_is_blue"><br>дизайну</span> и <br><span class="hero__header_is_blue">разработке <span class="hero__typing" aria-hidden="true"></span></span></h1>
+      <h1 class="hero__header">Чемпионат по <span class="is_blue"><br>дизайну</span><br>и <span class="is_blue">разработке <span class="hero__typing" aria-hidden="true"></span></span></h1>
       <p class="hero__description">Для студентов колледжей и вузов.<br>Собери кейс в портфолио и выиграй призы.</p>
       <button class="hero__button">Участвовать</button>
     </div>
   </section>
-  <section class="about">
+  <section class="about" id="stages">
     <div class="about__overlay"></div>
     <h2 class="about__title">Этапы</h2>
     <p class="about__description">Чемпионат проходит в два этапа: на
@@ -56,7 +58,7 @@
            возможности для развития.
     </p>
   </section>
-  <section class="directions">
+  <section class="directions" id="directions">
     <div class="directions__card">
       <h3 class="directions__title">Разработка</h3>
       <p class="directions__description">Реализуй веб-интерфейс 
@@ -72,7 +74,33 @@
           удобство и стиль.</p>
     </div>
   </section>
+  <section class="prizes" id="prizes">
+    <h3 class="prizes__title">Призы</h3>
+    <p class="prizes__description">Победителей и призёров чемпионата ждут <span class="is_blue">призы</span>
+       от VK и партнёров, памятные сертификаты и дополнительные 
+       возможности для развития. Лучшие участники получат
+        <span class="is_blue">рекомендации</span> от экспертов VK и VK Education и смогут 
+        пополнить <span class="is_blue">портфолио</span> работой над реальным кейсом.</p>
+  </section>
   <script src="/js/typing.js"></script>
   <script src="/js/menu.js"></script>
+  <section class="form" id="news">
+    <div class="form__card">
+      <h2 class="form__title">
+        Быть в курсе<br>
+        <span class="form__title_accent">новостей</span>
+      </h2>
+      <p class="form__text">
+        Оставь свой email, чтобы получать новости и напоминания о чемпионате:
+      </p>
+      <form class="form__field" action="#" method="post">
+        <label class="form__label">
+          <span class="form__visually_hidden">Email</span>
+          <input class="form__input" type="email" name="email" placeholder="Введи свой email" required>
+        </label>
+        <button class="form__button" type="submit">Отправить</button>
+      </form>
+    </div>
+  </section>
 </body>
 </html>

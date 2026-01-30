@@ -1,0 +1,10 @@
+.prizes {
+  display: flex;
+  flex-direction: column;
+
+  padding: 10px 16px;
+}
+
+.prizes__title {
+  font-size: 32px;
+}
