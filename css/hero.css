@@ -39,8 +39,17 @@
   border-width: 1px;
 }
 
+.hero__button a {
+  text-decoration: none;
+  color: #000;
+}
+
 .hero__button:active {
   background-color: #000;
+  color: #fff;
+}
+
+.hero__button a:active {
   color: #fff;
 }
 
