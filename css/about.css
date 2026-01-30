@@ -2,6 +2,7 @@
   width: 100%;
 
   position: relative;
+  gap: 10px;
 
   background-image: url(/css/images/about__picture.jpg);
   background-position: center;
